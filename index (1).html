@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ============================================================
+     SEO: replace USERNAME with your GitHub username after you
+     create the repo. Everything else is ready to ship.
+     ============================================================ -->
+<title>Jonathan Emmanuel | AI UGC Avatar Ads &amp; Product Commercials for DTC Brands</title>
+<meta name="description" content="Jonathan Emmanuel makes AI UGC avatar ads and product commercials for DTC brands. Fresh ad creative every week for Meta, TikTok and YouTube. No talent fees, no studio, no shoot days. Based in Lagos, working worldwide.">
+<link rel="canonical" href="https://USERNAME.github.io/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="author" content="Jonathan Emmanuel">
+<meta name="geo.region" content="NG-LA">
+<meta name="geo.placename" content="Lagos, Nigeria">
+<meta name="theme-color" content="#B1122E">
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jonathan Emmanuel">
+<meta property="og:title" content="AI UGC Avatar Ads &amp; Product Commercials for DTC Brands">
+<meta property="og:description" content="Avatar-led hooks, product-led visuals, built for Meta, TikTok and YouTube. Fresh creative every week without a shoot.">
+<meta property="og:url" content="https://USERNAME.github.io/">
+<meta property="og:locale" content="en_NG">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jonathan Emmanuel | AI UGC Avatar Ads">
+<meta name="twitter:description" content="AI UGC avatar ads and product commercials for DTC brands. Built for paid social testing.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+<!-- Emoji favicon so there is no broken icon request -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+
+<style>
+/* ============================================================
+   TOKENS
+   ============================================================ */
+:root{
+  --cream:#F1E4CE;
+  --cream-deep:#E7D5B8;
+  --offwhite:#FDF9F2;
+  --crimson:#B1122E;
+  --crimson-hot:#DB2142;
+  --ink:#23121A;
+  --ink-soft:#6A5560;
+
+  --glass:rgba(253,249,242,.58);
+  --glass-strong:rgba(253,249,242,.82);
+  --edge:rgba(255,255,255,.75);
+  --edge-dark:rgba(35,18,26,.10);
+
+  --shadow-lift:0 1px 2px rgba(35,18,26,.05), 0 18px 40px -18px rgba(35,18,26,.28);
+  --shadow-float:0 2px 4px rgba(35,18,26,.06), 0 40px 70px -30px rgba(177,18,46,.40);
+
+  --display:"Bricolage Grotesque", Georgia, serif;
+  --body:"Instrument Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+
+  --measure:66ch;
+  --gutter:clamp(1.15rem, 4vw, 3.25rem);
+  --radius:22px;
+  --radius-sm:13px;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+
+html{scroll-behavior:smooth; scroll-padding-top:5.5rem; -webkit-text-size-adjust:100%}
+
+body{
+  margin:0;
+  font-family:var(--body);
+  font-size:clamp(1rem, .96rem + .2vw, 1.075rem);
+  line-height:1.62;
+  color:var(--ink);
+  background-color:var(--cream);
+  background-image:
+    radial-gradient(60rem 40rem at 88% -8%, rgba(219,33,66,.24), transparent 62%),
+    radial-gradient(48rem 38rem at -12% 12%, rgba(177,18,46,.15), transparent 60%),
+    radial-gradient(52rem 34rem at 50% 108%, rgba(231,213,184,.85), transparent 64%);
+  background-attachment:fixed;
+  overflow-x:hidden;
+}
+
+/* paper grain, keeps the cream from looking flat */
+body::before{
+  content:"";
+  position:fixed; inset:0; z-index:0; pointer-events:none; opacity:.30;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='.42'/%3E%3C/svg%3E");
+  mix-blend-mode:multiply;
+}
+
+img{max-width:100%; height:auto; display:block}
+
+a{color:var(--crimson); text-underline-offset:.22em; text-decoration-thickness:1px}
+a:hover{color:var(--crimson-hot)}
+
+:focus-visible{outline:3px solid var(--crimson); outline-offset:3px; border-radius:6px}
+
+.skip{
+  position:absolute; left:-9999px; top:0; z-index:200;
+  background:var(--ink); color:var(--offwhite);
+  padding:.8rem 1.1rem; border-radius:0 0 12px 0; font-weight:600;
+}
+.skip:focus{left:0}
+
+/* ============================================================
+   LAYOUT PRIMITIVES
+   ============================================================ */
+.wrap{
+  width:min(1180px, 100% - (var(--gutter) * 2));
+  margin-inline:auto;
+  position:relative; z-index:1;
+}
+
+section.band{padding-block:clamp(4rem, 9vw, 7.5rem)}
+section.band.tight{padding-block:clamp(3rem, 6vw, 5rem)}
+
+.lede{max-width:var(--measure)}
+
+/* ============================================================
+   TYPE
+   ============================================================ */
+h1,h2,h3,h4{
+  font-family:var(--display);
+  font-weight:800;
+  line-height:1.03;
+  letter-spacing:-.025em;
+  margin:0 0 .6rem;
+  text-wrap:balance;
+}
+h1{font-size:clamp(2.6rem, 7.4vw, 5.25rem); letter-spacing:-.04em}
+h2{font-size:clamp(1.95rem, 4.3vw, 3.1rem)}
+h3{font-size:clamp(1.18rem, 1.9vw, 1.45rem); letter-spacing:-.015em}
+h4{font-size:1.02rem; font-weight:600; letter-spacing:-.01em}
+p{margin:0 0 1.05rem; max-width:var(--measure)}
+
+.section-head{
+  display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between;
+  gap:1.25rem; margin-bottom:clamp(1.9rem, 4vw, 3rem);
+  border-bottom:1px solid var(--edge-dark); padding-bottom:1.15rem;
+}
+.section-head p{margin:0; color:var(--ink-soft); max-width:42ch}
+
+.mark{
+  font-family:var(--display); font-weight:600; font-size:.82rem;
+  color:var(--crimson); letter-spacing:.02em;
+  display:inline-flex; align-items:center; gap:.5rem;
+}
+.mark::before{
+  content:""; width:26px; height:2px; background:var(--crimson); border-radius:2px;
+}
+
+/* ============================================================
+   GLASS
+   ============================================================ */
+.glass{
+  background:var(--glass);
+  backdrop-filter:blur(16px) saturate(155%);
+  -webkit-backdrop-filter:blur(16px) saturate(155%);
+  border:1px solid var(--edge);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow-lift);
+}
+.glass.solidish{background:var(--glass-strong)}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn{
+  display:inline-flex; align-items:center; gap:.55rem;
+  font-family:var(--body); font-weight:600; font-size:1rem;
+  padding:.92rem 1.5rem; border-radius:999px;
+  text-decoration:none; border:1px solid transparent; cursor:pointer;
+  transition:transform .18s ease, box-shadow .18s ease, background-color .18s ease;
+}
+.btn svg{width:19px; height:19px; flex:none}
+.btn-primary{
+  background:var(--crimson); color:var(--offwhite);
+  box-shadow:0 12px 26px -12px rgba(177,18,46,.85);
+}
+.btn-primary:hover{background:var(--crimson-hot); color:var(--offwhite); transform:translateY(-2px)}
+.btn-ghost{
+  background:rgba(253,249,242,.65); color:var(--ink);
+  border-color:rgba(35,18,26,.16);
+  backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+}
+.btn-ghost:hover{color:var(--crimson); border-color:var(--crimson); transform:translateY(-2px)}
+.btn-row{display:flex; flex-wrap:wrap; gap:.75rem; margin-top:1.9rem}
+
+/* ============================================================
+   NAV
+   ============================================================ */
+.nav{
+  position:sticky; top:0; z-index:100;
+  background:rgba(241,228,206,.72);
+  backdrop-filter:blur(18px) saturate(160%);
+  -webkit-backdrop-filter:blur(18px) saturate(160%);
+  border-bottom:1px solid rgba(35,18,26,.09);
+}
+.nav-in{
+  width:min(1180px, 100% - (var(--gutter) * 2)); margin-inline:auto;
+  display:flex; align-items:center; justify-content:space-between; gap:1rem;
+  min-height:4.4rem;
+}
+.brand{
+  display:flex; align-items:center; gap:.65rem;
+  font-family:var(--display); font-weight:800; font-size:1.08rem;
+  letter-spacing:-.03em; color:var(--ink); text-decoration:none;
+}
+.brand .dot{
+  width:11px; height:11px; border-radius:50%; background:var(--crimson);
+  box-shadow:0 0 0 4px rgba(177,18,46,.18); flex:none;
+}
+.brand:hover{color:var(--crimson)}
+.nav-links{display:flex; align-items:center; gap:1.45rem}
+.nav-links a{
+  color:var(--ink); text-decoration:none; font-size:.94rem; font-weight:500;
+  padding:.3rem 0; border-bottom:1.5px solid transparent;
+}
+.nav-links a:hover{color:var(--crimson); border-bottom-color:var(--crimson)}
+.nav-links .btn{padding:.6rem 1.1rem; font-size:.92rem}
+.nav-toggle{
+  display:none; background:none; border:1px solid rgba(35,18,26,.18);
+  border-radius:10px; padding:.5rem .7rem; cursor:pointer; color:var(--ink);
+  font-family:var(--body); font-weight:600; font-size:.9rem;
+}
+
+@media (max-width:880px){
+  .nav-toggle{display:block}
+  .nav-links{
+    display:none; position:absolute; left:0; right:0; top:100%;
+    flex-direction:column; align-items:stretch; gap:0;
+    background:rgba(253,249,242,.96);
+    backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(35,18,26,.12);
+    padding:.5rem var(--gutter) 1.35rem;
+  }
+  .nav-links.open{display:flex}
+  .nav-links a{padding:.85rem 0; border-bottom:1px solid rgba(35,18,26,.08)}
+  .nav-links .btn{margin-top:.9rem; justify-content:center; border-bottom:none}
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{padding-block:clamp(3.2rem, 8vw, 6rem) clamp(3.5rem, 8vw, 6.5rem)}
+.hero-grid{
+  display:grid; grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);
+  gap:clamp(2rem, 5vw, 4.5rem); align-items:center;
+}
+.hero h1{margin-bottom:1.25rem}
+.hero h1 .quiet{display:block; color:var(--crimson)}
+.hero-sub{font-size:clamp(1.05rem, 1.6vw, 1.22rem); color:var(--ink-soft); max-width:52ch}
+.hero-meta{
+  display:flex; flex-wrap:wrap; gap:.5rem; margin-top:2.1rem;
+  padding-top:1.5rem; border-top:1px solid var(--edge-dark);
+}
+.pill{
+  font-size:.83rem; font-weight:500; color:var(--ink-soft);
+  background:rgba(253,249,242,.7); border:1px solid var(--edge);
+  padding:.4rem .85rem; border-radius:999px;
+  backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+}
+
+/* the frame stack: 9:16 vertical ad frames, floating */
+.stack{position:relative; min-height:clamp(340px, 46vw, 470px)}
+.frame{
+  position:absolute; width:clamp(150px, 20vw, 205px); aspect-ratio:9/16;
+  border-radius:20px; overflow:hidden;
+  border:1px solid var(--edge);
+  box-shadow:var(--shadow-float);
+  backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px);
+  display:flex; flex-direction:column; justify-content:flex-end;
+  padding:.9rem;
+  color:var(--offwhite);
+  will-change:transform;
+}
+.frame span{
+  font-size:.72rem; line-height:1.35; font-weight:600;
+  text-shadow:0 1px 8px rgba(35,18,26,.55);
+}
+.frame::after{
+  content:""; position:absolute; inset:0;
+  background:linear-gradient(180deg, transparent 38%, rgba(35,18,26,.62));
+}
+.frame span{position:relative; z-index:2}
+.f1{
+  left:2%; top:4%; z-index:3; transform:rotate(-6.5deg);
+  background:linear-gradient(150deg,#D9A441,#8C4A14 58%,#3B1908);
+  animation:bob 7.5s ease-in-out infinite;
+}
+.f2{
+  left:33%; top:20%; z-index:4; transform:rotate(1.5deg);
+  background:linear-gradient(150deg,#E8EDF2,#8FA2B8 52%,#2C3B4F);
+  animation:bob 8.6s ease-in-out infinite .9s;
+}
+.f3{
+  right:0; top:1%; z-index:2; transform:rotate(7.5deg);
+  background:linear-gradient(150deg,#DB2142,#8A0E24 62%,#2A0910);
+  animation:bob 9.4s ease-in-out infinite 1.7s;
+}
+@keyframes bob{
+  0%,100%{translate:0 0}
+  50%{translate:0 -13px}
+}
+
+/* the one orchestrated load moment */
+.reveal{opacity:0; animation:rise .85s cubic-bezier(.22,.7,.24,1) forwards}
+.d1{animation-delay:.05s} .d2{animation-delay:.16s} .d3{animation-delay:.27s} .d4{animation-delay:.38s}
+@keyframes rise{from{opacity:0; translate:0 18px} to{opacity:1; translate:0 0}}
+
+@media (max-width:920px){
+  .hero-grid{grid-template-columns:1fr}
+  .stack{min-height:330px; order:-1}
+  .frame{width:min(31vw,175px)}
+}
+
+/* ============================================================
+   ANSWER CARD (the block built for AI answer engines)
+   ============================================================ */
+.answer{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
+  gap:0; overflow:hidden;
+}
+.answer div{padding:1.5rem 1.6rem; border-right:1px solid var(--edge-dark)}
+.answer div:last-child{border-right:none}
+.answer dt{
+  font-size:.79rem; font-weight:600; color:var(--crimson);
+  margin-bottom:.35rem; letter-spacing:.01em;
+}
+.answer dd{margin:0; font-size:.97rem; line-height:1.5; color:var(--ink)}
+@media (max-width:760px){
+  .answer div{border-right:none; border-bottom:1px solid var(--edge-dark)}
+  .answer div:last-child{border-bottom:none}
+}
+
+/* ============================================================
+   SERVICES
+   ============================================================ */
+.cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(285px,1fr)); gap:1.15rem}
+.card{padding:1.8rem 1.7rem; transition:transform .2s ease, box-shadow .2s ease}
+.card:hover{transform:translateY(-4px); box-shadow:var(--shadow-float)}
+.card h3{margin-bottom:.55rem}
+.card p{font-size:.96rem; color:var(--ink-soft); margin-bottom:.95rem}
+.card ul{margin:0; padding-left:1.05rem; font-size:.91rem; color:var(--ink-soft)}
+.card li{margin-bottom:.3rem}
+.card li::marker{color:var(--crimson)}
+.icn{
+  width:42px; height:42px; border-radius:13px; margin-bottom:1.1rem;
+  display:grid; place-items:center;
+  background:linear-gradient(145deg, rgba(219,33,66,.16), rgba(177,18,46,.06));
+  border:1px solid rgba(177,18,46,.20); color:var(--crimson);
+}
+.icn svg{width:21px; height:21px}
+
+/* ============================================================
+   WORK
+   ============================================================ */
+.work-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(275px,1fr)); gap:1.3rem}
+.work{overflow:hidden; display:flex; flex-direction:column}
+.work-art{
+  aspect-ratio:4/5; position:relative; display:grid; place-items:center;
+  color:rgba(253,249,242,.92); text-align:center; padding:1.5rem;
+}
+.work-art .kind{
+  font-family:var(--display); font-weight:800; font-size:1.55rem;
+  letter-spacing:-.03em; line-height:1.1;
+}
+.work-art .fmt{
+  position:absolute; top:.95rem; left:.95rem;
+  font-size:.72rem; font-weight:600; padding:.3rem .7rem; border-radius:999px;
+  background:rgba(35,18,26,.42); border:1px solid rgba(253,249,242,.28);
+  backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px);
+}
+/* the whole art panel is the play trigger */
+button.work-art{
+  width:100%; border:none; cursor:pointer; font:inherit;
+  padding:1.5rem; appearance:none;
+}
+.work-art .poster{
+  position:absolute; inset:0; width:100%; height:100%;
+  object-fit:cover; z-index:0;
+}
+.play{
+  position:relative; z-index:3;
+  width:62px; height:62px; border-radius:50%;
+  display:grid; place-items:center;
+  background:rgba(253,249,242,.92);
+  box-shadow:0 10px 30px -8px rgba(35,18,26,.6);
+  transition:transform .2s ease, background-color .2s ease;
+}
+.play svg{width:22px; height:22px; margin-left:3px; fill:var(--crimson)}
+button.work-art:hover .play{transform:scale(1.09); background:#fff}
+button.work-art:hover .kind{opacity:.55}
+.kind{transition:opacity .2s ease}
+.work-art video{
+  position:absolute; inset:0; width:100%; height:100%;
+  object-fit:contain; background:#1A0B10; z-index:5;
+}
+.work-art .stackwrap{position:relative; z-index:3; display:grid; gap:.9rem; justify-items:center}
+
+.a1{background:linear-gradient(155deg,#E0AC4C,#93500F 55%,#33150A)}
+.a2{background:linear-gradient(155deg,#EEF2F6,#93A6BC 50%,#26374B)}
+.a3{background:linear-gradient(155deg,#DB2142,#7F0C20 58%,#250811)}
+.work-body{padding:1.35rem 1.45rem 1.6rem}
+.work-body h3{margin-bottom:.4rem; font-size:1.1rem}
+.work-body p{font-size:.93rem; color:var(--ink-soft); margin:0}
+
+/* ============================================================
+   PROCESS (a real sequence, so timecodes are earned)
+   ============================================================ */
+.steps{display:grid; gap:1rem}
+.step{
+  display:grid; grid-template-columns:auto 1fr; gap:1.35rem; align-items:start;
+  padding:1.45rem 1.6rem;
+}
+.tc{
+  font-family:var(--display); font-weight:600; font-size:.95rem;
+  color:var(--crimson); background:rgba(177,18,46,.09);
+  border:1px solid rgba(177,18,46,.20);
+  padding:.35rem .6rem; border-radius:8px; white-space:nowrap;
+}
+.step h3{font-size:1.12rem; margin-bottom:.3rem}
+.step p{margin:0; font-size:.95rem; color:var(--ink-soft)}
+@media (max-width:560px){
+  .step{grid-template-columns:1fr; gap:.7rem}
+  .tc{justify-self:start}
+}
+
+/* ============================================================
+   STACK / TOOLS
+   ============================================================ */
+.tools{display:flex; flex-wrap:wrap; gap:.6rem; margin-top:1.6rem}
+.tool{
+  font-family:var(--display); font-weight:600; font-size:1rem;
+  padding:.55rem 1.05rem; border-radius:12px;
+  background:rgba(253,249,242,.72); border:1px solid var(--edge);
+  backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+  box-shadow:var(--shadow-lift);
+}
+.tool small{display:block; font-family:var(--body); font-weight:400; font-size:.75rem; color:var(--ink-soft)}
+
+.split{display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:clamp(1.5rem,4vw,3.5rem); align-items:start}
+
+/* ============================================================
+   FAQ
+   ============================================================ */
+.faq{max-width:900px}
+.faq-group{margin-bottom:2.3rem}
+.faq-group > h3{
+  font-size:1.02rem; color:var(--crimson); font-family:var(--body);
+  font-weight:600; letter-spacing:.01em; margin-bottom:.85rem;
+  padding-bottom:.5rem; border-bottom:1px solid var(--edge-dark);
+}
+details{
+  border-radius:var(--radius-sm); margin-bottom:.6rem;
+  background:rgba(253,249,242,.55);
+  backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
+  border:1px solid var(--edge);
+  overflow:hidden;
+}
+details[open]{background:rgba(253,249,242,.85); box-shadow:var(--shadow-lift)}
+summary{
+  cursor:pointer; list-style:none; padding:1.05rem 3rem 1.05rem 1.3rem;
+  font-weight:600; font-size:1rem; position:relative; color:var(--ink);
+}
+summary::-webkit-details-marker{display:none}
+summary::after{
+  content:""; position:absolute; right:1.25rem; top:50%;
+  width:11px; height:11px; margin-top:-6px;
+  border-right:2px solid var(--crimson); border-bottom:2px solid var(--crimson);
+  transform:rotate(45deg); transition:transform .22s ease;
+}
+details[open] summary::after{transform:rotate(-135deg); margin-top:-2px}
+summary:hover{color:var(--crimson)}
+.answer-body{padding:0 1.3rem 1.3rem}
+.answer-body p{font-size:.96rem; color:var(--ink-soft); margin-bottom:.7rem}
+.answer-body p:last-child{margin-bottom:0}
+
+/* ============================================================
+   CONTACT
+   ============================================================ */
+.contact-card{padding:clamp(2rem,4.5vw,3.5rem); text-align:center}
+.contact-card h2{margin-bottom:.8rem}
+.contact-card p{margin-inline:auto}
+.contact-card .btn-row{justify-content:center}
+.direct{
+  display:flex; flex-wrap:wrap; justify-content:center; gap:1.4rem;
+  margin-top:2rem; padding-top:1.6rem; border-top:1px solid var(--edge-dark);
+  font-size:.95rem;
+}
+.direct a{font-weight:600; text-decoration:none}
+.direct a:hover{text-decoration:underline}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer{
+  padding-block:2.6rem; border-top:1px solid var(--edge-dark);
+  background:rgba(253,249,242,.4);
+}
+.foot-in{
+  display:flex; flex-wrap:wrap; gap:1rem; justify-content:space-between; align-items:center;
+  font-size:.88rem; color:var(--ink-soft);
+}
+.foot-links{display:flex; flex-wrap:wrap; gap:1.2rem}
+.foot-links a{color:var(--ink-soft); text-decoration:none}
+.foot-links a:hover{color:var(--crimson)}
+
+/* ============================================================
+   MOTION PREFERENCE
+   ============================================================ */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important}
+  html{scroll-behavior:auto}
+  .reveal{opacity:1}
+}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============================ NAV ============================ -->
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="#top"><span class="dot" aria-hidden="true"></span>Jonathan Emmanuel</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    <nav class="nav-links" id="navLinks" aria-label="Main">
+      <a href="#services">What I make</a>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#stack">Tools</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-primary" href="https://wa.me/2349042949057?text=Hi%20Jonathan%2C%20I%20saw%20your%20site%20and%20I%27d%20like%20some%20ad%20creative." target="_blank" rel="noopener">Start a project</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<span id="top"></span>
+
+<!-- ============================ HERO ============================ -->
+<section class="hero wrap" aria-labelledby="h1">
+  <div class="hero-grid">
+    <div>
+      <p class="mark reveal d1">AI UGC and product commercials</p>
+      <h1 id="h1" class="reveal d1">Your ads stop converting after two weeks.<span class="quiet">Mine get replaced before they do.</span></h1>
+      <p class="hero-sub reveal d2">I make UGC avatar ads and product commercials for DTC brands that need fresh creative every week. No talent fees, no studio, no shoot days. You send the product and the angle. I send back scroll stopping ad creative built for Meta, TikTok and YouTube.</p>
+      <div class="btn-row reveal d3">
+        <a class="btn btn-primary" href="https://wa.me/2349042949057?text=Hi%20Jonathan%2C%20I%27d%20like%20a%20quote%20for%20UGC%20ad%20creative." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2m0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23m4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.02 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29"/></svg>
+          WhatsApp me
+        </a>
+        <a class="btn btn-ghost" href="mailto:jonathanemma108@gmail.com?subject=Ad%20creative%20enquiry">Email a brief</a>
+      </div>
+      <div class="hero-meta reveal d4">
+        <span class="pill">Lagos, Nigeria</span>
+        <span class="pill">Replies in 0 to 4 hours</span>
+        <span class="pill">Meta, TikTok, YouTube formats</span>
+        <span class="pill">Weekly delivery available</span>
+      </div>
+    </div>
+
+    <div class="stack" aria-hidden="true">
+      <div class="frame f1"><span>AETHER<br>beverage commercial</span></div>
+      <div class="frame f2"><span>STRYDE<br>product commercial</span></div>
+      <div class="frame f3"><span>Action camera<br>UGC unboxing</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ANSWER CARD: built to be quoted =================
+     Short, factual, self contained. This is the block an AI answer
+     engine lifts when someone asks "who makes AI UGC ads".
+     ================================================================== -->
+<section class="wrap band tight" aria-label="At a glance">
+  <dl class="glass solidish answer">
+    <div><dt>Who</dt><dd>Jonathan Emmanuel, AI UGC and product ad creative working with DTC brands.</dd></div>
+    <div><dt>What</dt><dd>Avatar led UGC ads, product commercials and short form social video.</dd></div>
+    <div><dt>Where</dt><dd>Based in Lagos, Nigeria. Works remotely with brands worldwide.</dd></div>
+    <div><dt>How to hire</dt><dd>WhatsApp, email, or through Upwork. Rate starts at $17 per hour, fixed price per deliverable on request.</dd></div>
+  </dl>
+</section>
+
+<!-- ============================ SERVICES ============================ -->
+<section class="wrap band" id="services" aria-labelledby="h-services">
+  <div class="section-head">
+    <div>
+      <p class="mark">Services</p>
+      <h2 id="h-services">What I make</h2>
+    </div>
+    <p>Avatar led hooks for the first three seconds, product led visuals for the rest, in as many variations as your testing budget needs.</p>
+  </div>
+
+  <div class="cards">
+    <article class="glass card">
+      <div class="icn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg></div>
+      <h3>UGC avatar ads</h3>
+      <p>A face, a hook, a reason to keep watching. Built to survive the scroll on paid social.</p>
+      <ul>
+        <li>Hook written for the first three seconds</li>
+        <li>Multiple avatar and script variations</li>
+        <li>9:16, 1:1 and 4:5 exports</li>
+      </ul>
+    </article>
+
+    <article class="glass card">
+      <div class="icn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8.5 12 4l9 4.5-9 4.5z"/><path d="M3 12.5 12 17l9-4.5"/><path d="M3 16.5 12 21l9-4.5"/></svg></div>
+      <h3>Product commercials</h3>
+      <p>Cinematic product film without a studio. The product spec gets locked before generation so it stays identical across every scene.</p>
+      <ul>
+        <li>Concept, script and shot list</li>
+        <li>Consistent product across the full cut</li>
+        <li>Grade, sound design and captions</li>
+      </ul>
+    </article>
+
+    <article class="glass card">
+      <div class="icn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="14" height="16" rx="2.5"/><path d="M17 9l4-2.5v11L17 15"/></svg></div>
+      <h3>Short form social video</h3>
+      <p>Reels, TikToks and Shorts on a weekly schedule, cut to the pacing of whatever reference you send.</p>
+      <ul>
+        <li>Weekly or biweekly delivery cycles</li>
+        <li>Captions burned in or as SRT</li>
+        <li>Trend and format matching</li>
+      </ul>
+    </article>
+
+    <article class="glass card">
+      <div class="icn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></div>
+      <h3>Voiceover and audio</h3>
+      <p>Cloned or library voices, accent matched to your market, mixed against music that fits the cut.</p>
+      <ul>
+        <li>Multi language and multi accent reads</li>
+        <li>Script tuned for read speed</li>
+        <li>Audio cut to the pacing of the edit</li>
+      </ul>
+    </article>
+
+    <article class="glass card">
+      <div class="icn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M4 12h16M4 18h9"/><circle cx="18" cy="18" r="2.5"/></svg></div>
+      <h3>Editing and finishing</h3>
+      <p>Assembly, pacing, captions, grade and export. Including rework on shots that read as AI generated.</p>
+      <ul>
+        <li>Cut rhythm matched to a reference</li>
+        <li>Platform safe zones respected</li>
+        <li>Source files handed over on request</li>
+      </ul>
+    </article>
+
+    <article class="glass card">
+      <div class="icn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17l5-6 4 4 4-6 5 8"/><circle cx="7" cy="6" r="2"/></svg></div>
+      <h3>Ad deconstruction</h3>
+      <p>I break a high performing ad down into pacing, shot types, cut rhythm and hook structure, then rebuild that structure around your product.</p>
+      <ul>
+        <li>Style match instead of guesswork</li>
+        <li>Works from any reference you send</li>
+        <li>Useful before a new testing round</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- ============================ WORK ============================ -->
+<section class="wrap band" id="work" aria-labelledby="h-work">
+  <div class="section-head">
+    <div>
+      <p class="mark">Selected work</p>
+      <h2 id="h-work">Recent pieces</h2>
+    </div>
+    <p>Swap these panels for your own thumbnails or embed the video files once your repo is live.</p>
+  </div>
+
+  <div class="work-grid">
+    <!-- ========================================================
+         HOW TO ADD YOUR VIDEOS
+         1. Put the file in a /videos folder in the repo:  videos/aether.mp4
+         2. Put a thumbnail in an /images folder:          images/aether.jpg
+         3. Fill in data-video and data-poster below.
+         The poster shows until someone clicks play, so the page
+         stays fast. Leave data-poster empty to keep the colour panel.
+         ======================================================== -->
+    <article class="glass work">
+      <button class="work-art a1"
+              data-video=""
+              data-poster=""
+              aria-label="Play the AETHER beverage commercial">
+        <span class="fmt">38 seconds</span>
+        <span class="stackwrap">
+          <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="kind">AETHER</span>
+        </span>
+      </button>
+      <div class="work-body">
+        <h3>Cinematic beverage commercial</h3>
+        <p>A 38 second cinematic spot for a beverage brand, concept through to final grade.</p>
+      </div>
+    </article>
+
+    <article class="glass work">
+      <button class="work-art a2"
+              data-video=""
+              data-poster=""
+              aria-label="Play the STRYDE product commercial">
+        <span class="fmt">Two ad formats</span>
+        <span class="stackwrap">
+          <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="kind">STRYDE</span>
+        </span>
+      </button>
+      <div class="work-body">
+        <h3>One product, two ad worlds</h3>
+        <p>A full product commercial built twice from the same spec, so the brand could test two creative directions against each other.</p>
+      </div>
+    </article>
+
+    <article class="glass work">
+      <button class="work-art a3"
+              data-video=""
+              data-poster=""
+              aria-label="Play the action camera UGC unboxing ad">
+        <span class="fmt">TikTok and Meta</span>
+        <span class="stackwrap">
+          <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="kind">Action camera</span>
+        </span>
+      </button>
+      <div class="work-body">
+        <h3>UGC unboxing ad</h3>
+        <p>Avatar led unboxing for a compact action camera, cut for TikTok and Meta placements.</p>
+      </div>
+    </article>
+  </div>
+
+  <div class="btn-row">
+    <!-- Replace with your live Upwork profile URL -->
+    <a class="btn btn-ghost" href="https://www.upwork.com/" target="_blank" rel="noopener">See the full portfolio on Upwork</a>
+  </div>
+</section>
+
+<!-- ============================ PROCESS ============================ -->
+<section class="wrap band" id="process" aria-labelledby="h-process">
+  <div class="section-head">
+    <div>
+      <p class="mark">How it runs</p>
+      <h2 id="h-process">From brief to ad ready file</h2>
+    </div>
+    <p>Same pipeline every time, which is what keeps a weekly delivery schedule realistic.</p>
+  </div>
+
+  <div class="steps">
+    <article class="glass step">
+      <span class="tc">00:01</span>
+      <div>
+        <h3>Brief and product spec</h3>
+        <p>You send the product, the angle and any reference ads. I lock the product spec before anything is generated so it stays identical across every scene in the campaign.</p>
+      </div>
+    </article>
+    <article class="glass step">
+      <span class="tc">00:02</span>
+      <div>
+        <h3>Script and hook</h3>
+        <p>Hook written for the first three seconds, then the body of the script. You approve the words before a single frame is generated.</p>
+      </div>
+    </article>
+    <article class="glass step">
+      <span class="tc">00:03</span>
+      <div>
+        <h3>Generation, shot by shot</h3>
+        <p>Each shot goes to whichever model handles it best: motion realism, character consistency, product fidelity or camera movement. No defaulting to one tool for everything.</p>
+      </div>
+    </article>
+    <article class="glass step">
+      <span class="tc">00:04</span>
+      <div>
+        <h3>Edit, grade and audio</h3>
+        <p>Assembly, pacing, captions, colour and sound cut to the pacing of your reference. Weak shots get regenerated rather than hidden in the edit.</p>
+      </div>
+    </article>
+    <article class="glass step">
+      <span class="tc">00:05</span>
+      <div>
+        <h3>Delivery and variations</h3>
+        <p>Final files in the aspect ratios you need, plus hook and angle variations so you have something to actually test against each other.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============================ STACK ============================ -->
+<section class="wrap band" id="stack" aria-labelledby="h-stack">
+  <div class="split">
+    <div>
+      <p class="mark">Tooling</p>
+      <h2 id="h-stack">Chosen per shot, not per habit</h2>
+      <p class="lede">Every model is good at something and bad at something else. I pick per shot based on what the shot actually needs, then finish everything in one edit so the cut feels like one piece of film rather than a pile of clips.</p>
+      <p class="lede">If you have a tool preference or an existing workflow, I can work inside it.</p>
+    </div>
+    <div>
+      <div class="tools">
+        <span class="tool">Kling<small>Motion realism</small></span>
+        <span class="tool">Runway<small>Camera movement</small></span>
+        <span class="tool">Veo 3<small>Scene coherence</small></span>
+        <span class="tool">Higgsfield<small>Shot control</small></span>
+        <span class="tool">HeyGen<small>Avatars and lip sync</small></span>
+        <span class="tool">Nano Banana<small>Image and product fidelity</small></span>
+        <span class="tool">ElevenLabs<small>Voiceover</small></span>
+        <span class="tool">CapCut<small>Edit and captions</small></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ ABOUT ============================ -->
+<section class="wrap band" id="about" aria-labelledby="h-about">
+  <div class="split">
+    <div>
+      <p class="mark">About</p>
+      <h2 id="h-about">Jonathan Emmanuel</h2>
+      <p class="lede">I make AI UGC avatar ads and product commercials for DTC brands, working remotely from Lagos, Nigeria. My focus is paid social creative: the kind of ad that has to earn attention in three seconds and then keep it long enough to sell something.</p>
+      <p class="lede">I work across multiple generation models rather than defaulting to one, because character consistency, product fidelity and camera movement rarely come from the same place. The finishing matters as much as the generation, so everything is edited, graded and captioned before it reaches you.</p>
+      <p class="lede">I study Computer Science at Lagos State University and hold a Digital Advertising Certification from HubSpot Academy. I work in English and Yoruba.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="#contact">Work with me</a>
+      </div>
+    </div>
+    <div>
+      <div class="glass card">
+        <h3>Working details</h3>
+        <ul style="list-style:none;padding:0;margin:.8rem 0 0">
+          <li style="padding:.6rem 0;border-bottom:1px solid var(--edge-dark)"><strong>Availability</strong><br><span style="color:var(--ink-soft)">More than 30 hours per week</span></li>
+          <li style="padding:.6rem 0;border-bottom:1px solid var(--edge-dark)"><strong>Response time</strong><br><span style="color:var(--ink-soft)">0 to 4 hours</span></li>
+          <li style="padding:.6rem 0;border-bottom:1px solid var(--edge-dark)"><strong>Time zone</strong><br><span style="color:var(--ink-soft)">West Africa Time, GMT+1. Overlaps with Europe all day and the US morning.</span></li>
+          <li style="padding:.6rem 0;border-bottom:1px solid var(--edge-dark)"><strong>Languages</strong><br><span style="color:var(--ink-soft)">English, Yoruba</span></li>
+          <li style="padding:.6rem 0"><strong>Hiring options</strong><br><span style="color:var(--ink-soft)">Upwork, Fiverr, or direct by WhatsApp and email</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FAQ ============================ -->
+<section class="wrap band" id="faq" aria-labelledby="h-faq">
+  <div class="section-head">
+    <div>
+      <p class="mark">Questions</p>
+      <h2 id="h-faq">Everything clients ask before hiring</h2>
+    </div>
+    <p>If your question is not here, message it to me and I will answer it straight.</p>
+  </div>
+
+  <div class="faq">
+
+    <div class="faq-group">
+      <h3>The basics</h3>
+
+      <details>
+        <summary>What exactly is an AI UGC ad?</summary>
+        <div class="answer-body">
+          <p>It is a user generated content style ad where the presenter, the scene, or both, are generated rather than filmed. It looks like a real person holding your product and talking to camera, but there is no casting call, no shoot day and no talent fee.</p>
+          <p>The format is the same one that performs on Meta and TikTok: a face, a hook, a demonstration, a reason to buy. Only the production route is different.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Do you use real actors or real footage?</summary>
+        <div class="answer-body">
+          <p>The presenters are AI generated avatars. If you have real footage of your product, or real customer clips you want cut into the ad, I can build around those too. Many of the strongest ads mix both.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Will the ad look obviously AI generated?</summary>
+        <div class="answer-body">
+          <p>That is the thing I spend the most time on. Shots that read as AI get regenerated rather than buried in the edit, and the finishing work, grade, pacing, audio and captions, is what closes most of the gap.</p>
+          <p>I will not promise a result no one can ever clock. I will tell you honestly which shots in a cut are the weakest before you run them.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>What kinds of brands do you work with?</summary>
+        <div class="answer-body">
+          <p>DTC and ecommerce brands running paid social: beverage, apparel, footwear, consumer electronics, skincare, supplements, accessories and similar physical products. If your product can be shown on camera, it can be made into this kind of ad.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>My product is complex or technical. Does this still work?</summary>
+        <div class="answer-body">
+          <p>Usually yes, though the approach shifts. Complex products lean more on product led visuals and demonstration than on an avatar talking. Send me the product and I will tell you before you pay whether this format suits it.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="faq-group">
+      <h3>Scope, timing and price</h3>
+
+      <details>
+        <summary>How long does a video take?</summary>
+        <div class="answer-body">
+          <p>A single UGC ad is typically a two to four day turnaround from approved script. A full product commercial takes longer because of the shot count and the grade. Weekly delivery cycles are something I already run for ongoing clients.</p>
+          <p>Rush work is possible. Tell me your deadline in the first message and I will say yes or no rather than making you wait.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>How much does it cost?</summary>
+        <div class="answer-body">
+          <p>My hourly rate starts at $17. For most projects a fixed price per deliverable is simpler, and I will quote that once I know the length, the number of variations and whether you need a full commercial or a single UGC cut.</p>
+          <p>Send the product and the brief and you will have a number back the same day.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>What do you need from me to start?</summary>
+        <div class="answer-body">
+          <p>Three things: clear product images or a link to the product page, the angle or claim you want the ad to lead with, and one or two reference ads whose style you like. Brand guidelines and any existing footage help but are not required.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>How many variations do I get?</summary>
+        <div class="answer-body">
+          <p>As many as your testing budget needs. Variations are usually the cheapest part of the job, because the script, the product spec and the edit structure already exist. Hook swaps, avatar swaps and aspect ratio versions are all straightforward once the first cut is approved.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>How do revisions work?</summary>
+        <div class="answer-body">
+          <p>Revisions are included and expected. You approve the script before generation starts, which removes most of the expensive rework. After the first cut, you send notes and I rework shots, pacing, captions or audio until it is right.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Can you work on a retainer or weekly schedule?</summary>
+        <div class="answer-body">
+          <p>Yes. Ongoing weekly delivery is the setup that suits paid social best, because you need new creative before the current ad fatigues, not after. Tell me your volume and we can fix a cycle.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="faq-group">
+      <h3>Output, formats and rights</h3>
+
+      <details>
+        <summary>What platforms are the ads built for?</summary>
+        <div class="answer-body">
+          <p>Meta ads, TikTok and YouTube, plus Instagram Reels and Shorts. I deliver in the aspect ratios each placement needs, 9:16, 1:1 and 4:5, with safe zones respected so captions and CTAs do not get cropped by the interface.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>What files do I receive?</summary>
+        <div class="answer-body">
+          <p>Final MP4s in every aspect ratio you asked for, captions burned in or supplied separately as SRT, and any variations. Project files and raw generations can be handed over on request.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Who owns the finished video?</summary>
+        <div class="answer-body">
+          <p>You do. Once the work is paid for, the finished ads are yours to run, edit and repurpose across any platform, with no time limit or extra usage fee from me.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Can you match my brand's existing ad style?</summary>
+        <div class="answer-body">
+          <p>Yes, and this is the part most people skip. I break a reference ad down into pacing, shot types, cut rhythm and hook structure, then rebuild that structure around your product. It is the difference between guessing at a style and actually matching it.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Will my product look accurate on screen?</summary>
+        <div class="answer-body">
+          <p>The product spec gets locked before anything is generated, so the packaging, colour and proportions stay identical across every scene in the campaign. Product drift between shots is the most common failure in AI ads and it is avoidable.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Can you do voiceover in other languages or accents?</summary>
+        <div class="answer-body">
+          <p>Yes. Voice is chosen or cloned to match the market you are selling into, and the script is tuned for read speed so the audio and the cut land together.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Do you only do short form, or longer pieces too?</summary>
+        <div class="answer-body">
+          <p>Short form is the core of the work, but longer product commercials are part of it as well. The AETHER spot runs 38 seconds and full commercials can go longer where the story needs it.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Do you write the script, or do I?</summary>
+        <div class="answer-body">
+          <p>I write it unless you would rather supply your own. Either way you approve the script before generation begins. If you have a script already, I will flag anything that will not survive the first three seconds.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="faq-group">
+      <h3>Working together</h3>
+
+      <details>
+        <summary>How do we start?</summary>
+        <div class="answer-body">
+          <p>Message me on WhatsApp at +234 904 294 9057 or email jonathanemma108@gmail.com with your product and what you want the ad to do. You will get a reply within a few hours with a scope, a price and a delivery date.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Do I have to hire you through Upwork?</summary>
+        <div class="answer-body">
+          <p>No. Upwork works well if you want escrow and platform protection. Direct is faster and simpler. Both are fine.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>What time zone are you in?</summary>
+        <div class="answer-body">
+          <p>West Africa Time, GMT+1. That overlaps with the whole European working day and the US morning. Typical response time is 0 to 4 hours.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>How do you handle NDAs and unreleased products?</summary>
+        <div class="answer-body">
+          <p>Happy to sign an NDA before you send anything. Unreleased products are not shown in my portfolio without written permission.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>What if I do not like the result?</summary>
+        <div class="answer-body">
+          <p>You approve the script before generation and you see the first cut before it is finished, so there are two points to redirect the work before it is done. If something still is not right at delivery, I rework it.</p>
+        </div>
+      </details>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================ CONTACT ============================ -->
+<section class="wrap band" id="contact" aria-labelledby="h-contact">
+  <div class="glass solidish contact-card">
+    <p class="mark" style="justify-content:center">Next step</p>
+    <h2 id="h-contact">Send the product. Get a quote today.</h2>
+    <p style="color:var(--ink-soft); max-width:48ch">Tell me what you sell and what the ad needs to do. You will have scope, price and a delivery date back within a few hours.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="https://wa.me/2349042949057?text=Hi%20Jonathan%2C%20here%27s%20my%20product%20and%20what%20I%20need." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2m4.52 12.15c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.02 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29"/></svg>
+        WhatsApp +234 904 294 9057
+      </a>
+      <a class="btn btn-ghost" href="mailto:jonathanemma108@gmail.com?subject=Ad%20creative%20enquiry&amp;body=Product%3A%0AWhat%20the%20ad%20needs%20to%20do%3A%0ADeadline%3A">Email the brief</a>
+    </div>
+    <div class="direct">
+      <span>WhatsApp: <a href="https://wa.me/2349042949057" target="_blank" rel="noopener">+234 904 294 9057</a></span>
+      <span>Email: <a href="mailto:jonathanemma108@gmail.com">jonathanemma108@gmail.com</a></span>
+      <span>Based in Lagos, Nigeria</span>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot-in">
+    <span>Jonathan Emmanuel. AI UGC avatar ads and product commercials for DTC brands.</span>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://wa.me/2349042949057" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="mailto:jonathanemma108@gmail.com">Email</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+// Mobile menu
+(function(){
+  var btn = document.getElementById('navToggle');
+  var links = document.getElementById('navLinks');
+  btn.addEventListener('click', function(){
+    var open = links.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.textContent = open ? 'Close' : 'Menu';
+  });
+  links.addEventListener('click', function(e){
+    if(e.target.tagName === 'A' && links.classList.contains('open')){
+      links.classList.remove('open');
+      btn.setAttribute('aria-expanded','false');
+      btn.textContent = 'Menu';
+    }
+  });
+})();
+
+// Portfolio players: poster first, video loads only when clicked
+(function(){
+  var panels = document.querySelectorAll('button.work-art');
+
+  panels.forEach(function(panel){
+    var poster = panel.getAttribute('data-poster');
+    if(poster){
+      var img = document.createElement('img');
+      img.className = 'poster';
+      img.src = poster;
+      img.alt = '';
+      img.loading = 'lazy';
+      panel.insertBefore(img, panel.firstChild);
+    }
+
+    panel.addEventListener('click', function(){
+      var src = panel.getAttribute('data-video');
+      if(!src){ return; }
+
+      // stop anything already playing
+      document.querySelectorAll('.work-art video').forEach(function(v){ v.pause(); });
+
+      var v = document.createElement('video');
+      v.src = src;
+      v.controls = true;
+      v.autoplay = true;
+      v.playsInline = true;
+      v.preload = 'auto';
+      panel.appendChild(v);
+      panel.disabled = true;
+      panel.style.cursor = 'default';
+    });
+  });
+})();
+
+// One FAQ open at a time, so the page never becomes a wall of text
+(function(){
+  var items = document.querySelectorAll('.faq details');
+  items.forEach(function(d){
+    d.addEventListener('toggle', function(){
+      if(d.open){
+        items.forEach(function(o){ if(o !== d) o.open = false; });
+      }
+    });
+  });
+})();
+</script>
+
+<!-- ============================================================
+     STRUCTURED DATA
+     This is what makes the page quotable by Google, ChatGPT,
+     Perplexity and AI Overviews. Keep it in sync with the copy above.
+     ============================================================ -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"Person",
+      "@id":"https://USERNAME.github.io/#person",
+      "name":"Jonathan Emmanuel",
+      "jobTitle":"AI UGC and Product Ad Creative",
+      "description":"Freelance AI video creator producing UGC avatar ads and product commercials for DTC brands.",
+      "email":"mailto:jonathanemma108@gmail.com",
+      "telephone":"+2349042949057",
+      "knowsLanguage":["English","Yoruba"],
+      "address":{"@type":"PostalAddress","addressLocality":"Lagos","addressRegion":"Lagos","addressCountry":"NG"},
+      "alumniOf":{"@type":"CollegeOrUniversity","name":"Lagos State University"},
+      "hasCredential":{"@type":"EducationalOccupationalCredential","name":"Digital Advertising Certification","recognizedBy":{"@type":"Organization","name":"HubSpot Academy"}},
+      "knowsAbout":["AI UGC ads","Product commercials","Meta ads creative","TikTok ads","Short form video","AI video generation","Voiceover","Video editing"]
+    },
+    {
+      "@type":"ProfessionalService",
+      "@id":"https://USERNAME.github.io/#service",
+      "name":"Jonathan Emmanuel | AI UGC Avatar Ads and Product Commercials",
+      "founder":{"@id":"https://USERNAME.github.io/#person"},
+      "url":"https://USERNAME.github.io/",
+      "image":"https://USERNAME.github.io/og.jpg",
+      "description":"AI UGC avatar ads and product commercials for DTC brands, built for Meta, TikTok and YouTube. No talent fees, no studio, no shoot days.",
+      "priceRange":"$$",
+      "telephone":"+2349042949057",
+      "email":"mailto:jonathanemma108@gmail.com",
+      "address":{"@type":"PostalAddress","addressLocality":"Lagos","addressRegion":"Lagos","addressCountry":"NG"},
+      "areaServed":{"@type":"Place","name":"Worldwide"},
+      "availableLanguage":["English","Yoruba"],
+      "makesOffer":[
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"UGC avatar ads","description":"Avatar led user generated content style ads for paid social."}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Product commercials","description":"Cinematic product film with a locked product spec for consistency across scenes."}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Short form social video","description":"Reels, TikToks and Shorts on a weekly delivery schedule."}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Voiceover and audio","description":"Multi language voiceover matched to market and cut to the edit."}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Video editing and finishing","description":"Assembly, pacing, captions, grade and platform ready exports."}}
+      ]
+    },
+    {
+      "@type":"WebSite",
+      "@id":"https://USERNAME.github.io/#website",
+      "url":"https://USERNAME.github.io/",
+      "name":"Jonathan Emmanuel",
+      "inLanguage":"en",
+      "publisher":{"@id":"https://USERNAME.github.io/#person"}
+    },
+    {
+      "@type":"FAQPage",
+      "@id":"https://USERNAME.github.io/#faq",
+      "mainEntity":[
+        {"@type":"Question","name":"What exactly is an AI UGC ad?","acceptedAnswer":{"@type":"Answer","text":"It is a user generated content style ad where the presenter, the scene, or both, are generated rather than filmed. It looks like a real person holding your product and talking to camera, but there is no casting call, no shoot day and no talent fee. The format is the same one that performs on Meta and TikTok: a face, a hook, a demonstration, a reason to buy."}},
+        {"@type":"Question","name":"Do you use real actors or real footage?","acceptedAnswer":{"@type":"Answer","text":"The presenters are AI generated avatars. If you have real footage of your product, or real customer clips you want cut into the ad, those can be built in as well. Many of the strongest ads mix both."}},
+        {"@type":"Question","name":"Will the ad look obviously AI generated?","acceptedAnswer":{"@type":"Answer","text":"Shots that read as AI get regenerated rather than buried in the edit, and the finishing work of grade, pacing, audio and captions closes most of the gap. Weak shots in a cut are flagged before the ads are run."}},
+        {"@type":"Question","name":"How long does a video take?","acceptedAnswer":{"@type":"Answer","text":"A single UGC ad is typically a two to four day turnaround from approved script. A full product commercial takes longer because of the shot count and the grade. Weekly delivery cycles are available for ongoing clients."}},
+        {"@type":"Question","name":"How much does an AI UGC ad cost?","acceptedAnswer":{"@type":"Answer","text":"The hourly rate starts at $17. For most projects a fixed price per deliverable is used instead, quoted once the length, the number of variations and the format are known. Quotes are usually returned the same day."}},
+        {"@type":"Question","name":"What do you need from me to start?","acceptedAnswer":{"@type":"Answer","text":"Clear product images or a link to the product page, the angle or claim the ad should lead with, and one or two reference ads whose style you like. Brand guidelines and existing footage help but are not required."}},
+        {"@type":"Question","name":"How many ad variations do I get?","acceptedAnswer":{"@type":"Answer","text":"As many as the testing budget needs. Once the first cut is approved, hook swaps, avatar swaps and aspect ratio versions are straightforward because the script, product spec and edit structure already exist."}},
+        {"@type":"Question","name":"What platforms are the ads built for?","acceptedAnswer":{"@type":"Answer","text":"Meta ads, TikTok and YouTube, plus Instagram Reels and Shorts. Delivery includes 9:16, 1:1 and 4:5 aspect ratios with platform safe zones respected."}},
+        {"@type":"Question","name":"Who owns the finished video?","acceptedAnswer":{"@type":"Answer","text":"The client does. Once the work is paid for, the finished ads can be run, edited and repurposed across any platform with no time limit or extra usage fee."}},
+        {"@type":"Question","name":"Can you match my brand's existing ad style?","acceptedAnswer":{"@type":"Answer","text":"Yes. A reference ad is broken down into pacing, shot types, cut rhythm and hook structure, then that structure is rebuilt around your product, which matches a style rather than guessing at it."}},
+        {"@type":"Question","name":"Will my product look accurate on screen?","acceptedAnswer":{"@type":"Answer","text":"The product spec is locked before anything is generated, so packaging, colour and proportions stay identical across every scene in the campaign. Product drift between shots is the most common failure in AI ads and it is avoidable."}},
+        {"@type":"Question","name":"Can you do voiceover in other languages or accents?","acceptedAnswer":{"@type":"Answer","text":"Yes. Voice is chosen or cloned to match the target market, and the script is tuned for read speed so the audio and the cut land together."}},
+        {"@type":"Question","name":"How do we start?","acceptedAnswer":{"@type":"Answer","text":"Message Jonathan on WhatsApp at +234 904 294 9057 or email jonathanemma108@gmail.com with the product and what the ad needs to do. A reply with scope, price and a delivery date usually arrives within a few hours."}},
+        {"@type":"Question","name":"What time zone do you work in?","acceptedAnswer":{"@type":"Answer","text":"West Africa Time, GMT+1, which overlaps the full European working day and the US morning. Typical response time is 0 to 4 hours."}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>
