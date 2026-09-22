@@ -310,11 +310,15 @@ p{margin:0 0 1.05rem; max-width:var(--measure)}
   font-size:.72rem; line-height:1.35; font-weight:600;
   text-shadow:0 1px 8px rgba(35,18,26,.55);
 }
+.frame video{
+  position:absolute; inset:0; width:100%; height:100%;
+  object-fit:cover; z-index:0;
+}
+.frame span{position:relative; z-index:2}
 .frame::after{
   content:""; position:absolute; inset:0;
   background:linear-gradient(180deg, transparent 38%, rgba(35,18,26,.62));
 }
-.frame span{position:relative; z-index:2}
 .f1{
   left:2%; top:4%; z-index:3; transform:rotate(-6.5deg);
   background:linear-gradient(150deg,#D9A441,#8C4A14 58%,#3B1908);
@@ -574,11 +578,6 @@ footer{
 
 <!-- ============================ HERO ============================ -->
 <section class="hero wrap" aria-labelledby="h1">
-  <div class="hero-bg" aria-hidden="true">
-    <video autoplay muted loop playsinline poster="hero-bottle-poster.jpg">
-      <source src="hero-bottle.mp4" type="video/mp4">
-    </video>
-  </div>
   <div class="hero-grid">
     <div>
       <p class="mark reveal d1">AI UGC and product commercials</p>
@@ -600,9 +599,18 @@ footer{
     </div>
 
     <div class="stack" aria-hidden="true">
-      <div class="frame f1"><span>AETHER<br>beverage commercial</span></div>
-      <div class="frame f2"><span>STRYDE<br>product commercial</span></div>
-      <div class="frame f3"><span>Action camera<br>UGC unboxing</span></div>
+      <div class="frame f1">
+        <video autoplay muted loop playsinline><source src="frame-left.mp4" type="video/mp4"></video>
+        <span>DTC avatar ad<br>for Sheo</span>
+      </div>
+      <div class="frame f2">
+        <video autoplay muted loop playsinline><source src="frame-middle.mp4" type="video/mp4"></video>
+        <span>Braven<br>beard oil talking head</span>
+      </div>
+      <div class="frame f3">
+        <video autoplay muted loop playsinline><source src="frame-right.mp4" type="video/mp4"></video>
+        <span>Beverage can<br>product commercial</span>
+      </div>
     </div>
   </div>
 </section>
